@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node src/index.js",
     "watch": "nodemon src/index.js",
-    "test": "node src/test.js"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "main": "index.js",
   "license": "MIT",
@@ -12,6 +13,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "jest": "^27.0.4",
+    "chai": "^4.3.4",
     "nodemon": "^2.0.7"
   }
 }

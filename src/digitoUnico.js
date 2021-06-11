@@ -1,3 +1,5 @@
+const { digitoUnicoReferenceErrorMessage } = require('./utils');
+
 const sumN = (p) => p
   .split("")
   .reduce((total, number) => total + Number(number), 0);
@@ -8,6 +10,10 @@ const sumN = (p) => p
 * @param {string} log = "" Histórico de todos chamadas feitas
 */
 const digitoUnico = (n, k = 1, log = "") => {
+  if (n === undefined) {
+    throw new ReferenceError(digitoUnicoReferenceErrorMessage);
+  }
+
   if (n < 10) {
     return { result: n, log };
   }

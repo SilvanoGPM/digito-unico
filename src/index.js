@@ -12,5 +12,5 @@ app.get('/:n/:k?', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`[Digito Único] - Listening at http://localhost:${PORT}`)
+  console.log(`[Dígito Único] - Listening at http://localhost:${PORT}`)
 });
