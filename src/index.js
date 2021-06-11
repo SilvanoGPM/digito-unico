@@ -7,12 +7,8 @@ const PORT = 3030 || process.env.PORT;
 
 app.get('/:n/:k?', (req, res) => {
   const { n, k } = req.params;
-  const result = digitoUnico(n, k);
-
-  res.json({
-    result
-  });
-
+  const result = digitoUnico(n, k, "log:");
+  res.json(result);
 });
 
 app.listen(PORT, () => {

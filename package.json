@@ -1,9 +1,10 @@
 {
-  "name": "unique-digit",
+  "name": "digito-unico",
   "version": "1.0.0",
   "scripts": {
     "start": "node src/index.js",
-    "watch": "nodemon src/index.js"
+    "watch": "nodemon src/index.js",
+    "test": "node src/test.js"
   },
   "main": "index.js",
   "license": "MIT",
