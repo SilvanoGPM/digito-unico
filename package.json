@@ -1,0 +1,16 @@
+{
+  "name": "unique-digit",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
