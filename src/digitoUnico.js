@@ -1,6 +1,6 @@
 const { digitoUnicoReferenceErrorMessage } = require('./utils');
 
-const sumN = (p) => p
+const sumN = (p) => String(p)
   .split("")
   .reduce((total, number) => total + Number(number), 0);
 
@@ -14,11 +14,12 @@ const digitoUnico = (n, k = 1, log = "") => {
     throw new ReferenceError(digitoUnicoReferenceErrorMessage);
   }
 
-  if (n < 10) {
-    return { result: n, log };
+  const p = String(n).repeat(k);
+
+  if (p.length === 1) {
+    return { result: Number(p), log };
   }
 
-  const p = String(n).repeat(k);
   const sum = sumN(p);
   const nextLog = `${log} digitoUnico(${p}) = ${sum}${sum < 10 ? "" : " -> "}`;
 
