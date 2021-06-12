@@ -17,7 +17,7 @@ A partir de dois números `n` e `k`, `p` deverá ser criado da concatenação da
 
 Exemplo:
 ```
-n = 9875 e  k= 4 -> p = 9875987598759875
+n = 9875 e  k = 4 -> p = 9875987598759875
 9 + 8 + 7 + 5 + 9 + 8 + 7 + 5 + 9 + 8 + 7 + 5 + 9 + 8 + 7 + 5 = 116
 digitoUnico(116) = 8
 ```
